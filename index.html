@@ -1,66 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, user-scalable=no" >
-
-	<meta content="ALL" name="robots" />
-	<meta content="Global" name="distribution" />
-	<meta content="General" name="rating" />
-	<meta content="1" name="revisit-after" />
-
-	<meta content="Fred Fontes" name="author" />
-	<meta content="Design" name="classification" />
-	<meta content="ux, ui, user, usuário, usuario, experience, experiência, experiencia, interface, design, digital, visual, web, website, site, uxui, fred, fontes, fredfontes, frederico, oliveira" name="keywords" />
-	<meta content="Fred Fontes — Digital Designer" name="description" />
-
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://fredfontes.com" />
-	<title>Fred Fontes — Digital Designer</title>
-	<style type="text/css">
-		body {
-            background-image: url('imgs/tapume.png');
-            background-position: center center;
-        }
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="robots" content="ALL" />
+<meta name="distribution" content="Global" />
+<meta name="rating" content="General" />
+<meta name="revisit-after" content="1" />
+<meta name="author" content="Fred Fontes" />
+<meta name="classification" content="Design" />
+<meta name="keywords" content="ux, ui, user, usuário, usuario, experience, experiência, experiencia, interface, design, digital, visual, web, website, site, uxui, fred, fontes, fredfontes, frederico, oliveira" />
+<meta name="description" content="Fred Fontes — Digital Designer" />
+<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+<link rel="canonical" href="index-2.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap">
+<link rel="stylesheet" href="files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+<title>Fred Fontes — Digital Designer</title>
+<style>
 		html, body {
 			margin: 0;
 			padding: 0;
-            overflow: hidden;
+            background-color:black;
+            color:#666;
+            font-family: 'Open Sans', sans-serif;
 		}
-        
-        @media (max-width: 767px) {
-            body {
-                background-size: 200%;
+        #cover {
+            background-image:url('imgs/tapume.png');
+            background-position: center center;
+            background-size:1920px;
+            width:100%;
+            height:80vh;
+        }
+        #cover img { 
+            width:100%;
+            height: 80vh;
+        }
+        #work {
+            width:100%;
+            max-width:1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            color:#eee;
+            font-size:48px;
+            margin: 20px auto;
+        }
+        h2, h3 { 
+            color:#888;
+            font-weight:normal;
+            margin: 4px auto;
+        }
+        h2 { font-size:20px;}
+        h3 { font-size:14px;}
+        h3.fields ul { padding:0; }
+        h3.fields li { display: inline-block; }
+        h3.fields li:before { content:', '; }
+        h3.fields li:first-child:before { content:''; }
+        div.projeto {
+            display: inline-block;
+            width:25%;
+            min-height:15vw;
+        }
+        div.projeto img {
+            width: 100%;
+            height: 15vw;
+            border:0;
+        }
+        #work header {
+            width:100%;
+            max-width:1400px;
+            background-color:black;
+        }
+        #work header div { float:left; }
+        #work a.back {
+            font-size:60px;
+            text-decoration:none;
+            color:white;
+            float:right;
+            margin:32px auto;
+        }
+        #work img.projeto {
+            width:auto;
+            height: auto;
+            border:0;
+            display:block;
+            margin: 0 auto;
+        }
+        #work img.projeto[src=""], #work img.projeto[src*="6a4dc983829239.5d48e4bacff31"], #work img.projeto[src*="fea7f2111515413.600351d2b9acc"] { display:none; }
+        footer {
+            display: block;
+            text-align: center;
+            margin-top: 148px;
+        }
+
+        footer .logo { 
+            margin: 56px auto;
+            width: 56px;
+            height: auto;
+        }
+
+        .sticky {
+            position:fixed;
+            background-color:rgba(0, 0, 0, 0.8) !important;
+            transition: background-color 1s;
+            z-index:2;
+        }
+        .sticky2 {
+            position:relative;
+            z-index:1;
+        }
+
+        @media (max-width: 960px) {
+            #cover { 
+                background-size:1280px;
+                height:70vh; 
+            }
+            #cover img { height:70vh; }
+            #work header { 
+                max-width:calc(100% - 48px); padding:0 24px; 
+            }
+            #work #cabecalho { max-width:calc(100% - 48px); }
+            #work a.back {
+                font-size: 32px;
+                margin: 8px auto;
+            }
+            #work img.projeto {
+                width:100%;
+            }
+            h1{
+                font-size: 78%;
+                margin: 10px auto;    
+            }
+            h2,h3 {font-size:70%;}
+            div.projeto {
+                display: inline-block;
+                width:33.3%;
+                min-height:25vw;
+            }
+            div.projeto img {
+                height: 25vw;
             }
         }
         
         @media (max-width: 480px) {
-            body {
-                background-size: 330%;
-            }
-        }
-        
-        img {
-            width: 100%;
-            height: 100vh;
-			border: none;
-        }
-        
-        a {
-            border: none;
         }
     </style>
-    <script>
+<script type="8d0674f659955013f92f306f-text/javascript">
         !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
         analytics.load("PPo2OLqlYhDmnauZRgeuHElCGJ1j3YaN");
         analytics.page();
         }}();
-      </script>
+    </script>
 </head>
-<body>
-    <a href="https://www.behance.net/fredfontes" target="_blank"><img src="imgs/spacer.png" /></a>
-</body>
+<body class="ms-Fabric" dir="ltr">
+<header id='cover'><a href='#works'><img src='imgs/spacer.png' alt='latest works'></a></header><section id='works'><div class='projeto' style='background-image:url(projects/original/69c9df111515413.Y3JvcCwxMzk5LDEwOTUsMCww.jpg); background-size:cover;'><a href='works/111515413.html'><img src='imgs/spacer.png' alt='Improve CRM' s usability flow for Project Managers'></a></div><div class='projeto' style='background-image:url(projects/original/30103b83829239.Y3JvcCwxMzkzLDEwOTAsMyww.jpg); background-size:cover;'><a href='works/83829239.html'><img src='imgs/spacer.png' alt='Reducing Minha Oi login friction'></a></div><div class='projeto' style='background-image:url(projects/original/b2cc5a28396983.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/28396983.html'><img src='imgs/spacer.png' alt='Rio2016 - Cultura'></a></div><div class='projeto' style='background-image:url(projects/original/0d96e826530251.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26530251.html'><img src='imgs/spacer.png' alt='Kita Sounds'></a></div><div class='projeto' style='background-image:url(projects/original/4e432539622117.Y3JvcCwxMjAwLDkzOCwwLDA.png); background-size:cover;'><a href='works/39622117.html'><img src='imgs/spacer.png' alt='Método DeROSE Copacabana'></a></div><div class='projeto' style='background-image:url(projects/original/2126a526475441.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26475441.html'><img src='imgs/spacer.png' alt='Pars'></a></div><div class='projeto' style='background-image:url(projects/original/9ad36639583099.Y3JvcCw3ODMsNjEzLDQzMCww.png); background-size:cover;'><a href='works/39583099.html'><img src='imgs/spacer.png' alt='Banana Brasil'></a></div><div class='projeto' style='background-image:url(projects/original/0955ce26028197.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.png); background-size:cover;'><a href='works/26028197.html'><img src='imgs/spacer.png' alt='Bodega Spania'></a></div><div class='projeto' style='background-image:url(projects/original/e75d5126438553.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.png); background-size:cover;'><a href='works/26438553.html'><img src='imgs/spacer.png' alt='Brucke Engenharia'></a></div><div class='projeto' style='background-image:url(projects/original/a65b9926439527.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26439527.html'><img src='imgs/spacer.png' alt='Chef Mania'></a></div><div class='projeto' style='background-image:url(projects/original/43320125580003.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.png); background-size:cover;'><a href='works/25580003.html'><img src='imgs/spacer.png' alt='Time PUC Rio'></a></div><div class='projeto' style='background-image:url(projects/original/2f83f526028413.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26028413.html'><img src='imgs/spacer.png' alt='Boliche Social Club'></a></div><div class='projeto' style='background-image:url(projects/original/0799d526531849.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26531849.html'><img src='imgs/spacer.png' alt='Sinapse'></a></div><div class='projeto' style='background-image:url(projects/original/81e35b26473517.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26473517.html'><img src='imgs/spacer.png' alt='Duas Marias'></a></div><div class='projeto' style='background-image:url(projects/original/45b38726531695.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26531695.html'><img src='imgs/spacer.png' alt='Ombak'></a></div><div class='projeto' style='background-image:url(projects/original/6cee5526027855.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26027855.html'><img src='imgs/spacer.png' alt='Bem Brasil'></a></div><div class='projeto' style='background-image:url(projects/original/31cee726578197.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.png); background-size:cover;'><a href='works/26578197.html'><img src='imgs/spacer.png' alt='Villa Helena'></a></div><div class='projeto' style='background-image:url(projects/original/f86e0226471229.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26471229.html'><img src='imgs/spacer.png' alt='A Rede'></a></div><div class='projeto' style='background-image:url(projects/original/a2212526471649.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26471649.html'><img src='imgs/spacer.png' alt='Cavaleiros Eventos'></a></div><div class='projeto' style='background-image:url(projects/original/dddb2c26474089.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26474089.html'><img src='imgs/spacer.png' alt='Elevation'></a></div><div class='projeto' style='background-image:url(projects/original/6ddc0526474223.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26474223.html'><img src='imgs/spacer.png' alt='Esthetic Center'></a></div><div class='projeto' style='background-image:url(projects/original/8e0bd926471561.Y3JvcCw0MDUwMCwzMTcwMCwwLDA.jpg); background-size:cover;'><a href='works/26471561.html'><img src='imgs/spacer.png' alt='Companhia Siderúrgica do Pecém'></a></div></section>
+<script type="8d0674f659955013f92f306f-text/javascript">
+function sticky() {
+    var cabecalho = document.getElementById("cabecalho");
+    var projeto = document.getElementById("projeto");
+    var cabecalhoHeight = cabecalho.offsetHeight;
+    var cabecalhoTop = cabecalho.offsetTop;
+    if (window.pageYOffset >= cabecalhoTop) {
+        cabecalho.parentNode.classList.add("sticky");
+        projeto.classList.add("sticky2");
+        projeto.style.top = cabecalhoHeight+"px";
+    } else {
+        cabecalho.parentNode.classList.remove("sticky");
+        projeto.classList.remove("sticky2");
+    }
+}
+</script>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8d0674f659955013f92f306f-|49" defer=""></script></body>
 </html>
