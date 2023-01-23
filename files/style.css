@@ -79,7 +79,9 @@ div.projeto:hover, #work a.back:hover, footer .logo:hover {
 footer {
     display: block;
     text-align: center;
+    /*
     margin-top: 148px;
+    */
 }
 
 footer .logo { 
