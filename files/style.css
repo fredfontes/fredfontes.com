@@ -23,7 +23,7 @@ html, body {
 }
 h1 {
     color:#eee;
-    font-size:48px;
+    font-size:40px;
     margin: 20px auto;
 }
 h2, h3 { 
@@ -62,7 +62,7 @@ div.projeto:hover, #work a.back:hover, footer .logo:hover {
 }
 #work header div { 
 float:left; 
-padding: 0 24pxb
+padding: 0 24px;
 }
 #work a.back {
     font-size:60px;
