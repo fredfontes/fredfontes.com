@@ -60,7 +60,10 @@ div.projeto:hover, #work a.back:hover, footer .logo:hover {
     max-width:1400px;
     background-color:black;
 }
-#work header div { float:left; }
+#work header div { 
+float:left; 
+padding: 0 24pxb
+}
 #work a.back {
     font-size:60px;
     text-decoration:none;
