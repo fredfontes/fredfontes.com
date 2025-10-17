@@ -113,7 +113,10 @@ footer .logo {
     #work header { 
         max-width:calc(100% - 48px); padding:0 12px; 
     }
-    #work #cabecalho { max-width:calc(100% - 48px); }
+    #work #cabecalho { 
+max-width:calc(100% - 48px); 
+padding: 0;
+}
     #work a.back {
         font-size: 32px;
         margin: 8px auto;
